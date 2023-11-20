@@ -1,0 +1,56 @@
+ul li:nth-child(2) {
+    margin: 10px 10px 0 0
+}
+
+ol {
+    list-style-type: upper-roman
+}
+
+.centered_h3 {
+    text-align: center;
+}
+
+.container {
+    display: flex;
+}
+
+.cat {
+    width: 400px;
+    height: 200px;    
+    margin: auto;
+    border: orange solid 6px
+
+}
+
+.lion {
+    width: 400px;
+    height: 300px;    
+    margin: auto;
+    margin-top: 6vh;
+    border:orange solid 6px
+}
+
+th {
+    border: 2px solid black
+}
+
+td {
+    border: 2px solid black
+}
+
+table {
+
+margin: auto
+
+}
+
+
+
+.table_title {
+    border: 2px solid red;
+    color: red;
+    font-style: bold;
+    margin-bottom: 20px;
+    /* display: inline-block;
+    margin: auto; */
+}

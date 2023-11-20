@@ -1,0 +1,66 @@
+.sign_in {
+    background-color: rgb(25, 25, 172);
+    color: white;
+    border: none;
+    height: 20px;
+    width: 60px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.sign_up {
+    background-color:rgb(25, 25, 172);
+    color: white;
+    border: none;
+    font-size: 15px;
+    height: 25px;
+    width: 80px;
+    border-radius: 6px;
+}
+
+blockquote{
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 50px;
+    width: 50%;
+    color: white;   
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.background-img {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Atlantic_near_Faroe_Islands.jpg/1280px-Atlantic_near_Faroe_Islands.jpg');
+    width: 100%;
+    height: 300px; /* Set a specific height */
+    background-size: cover;
+    background-position: center center;
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form {
+    margin-left: 650px;
+    display: inline-block;
+    text-align: center;
+}
+
+.email{
+    border-radius: 5px;
+    height: 25px;
+    display: inline-block;
+    text-align: left;
+}
+
+.bootstrap {
+    margin-left: 200px;
+    margin-right: 600px
+}
+body {
+    background-color: lightgray;
+}

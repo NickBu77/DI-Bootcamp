@@ -1,0 +1,102 @@
+/* <section class="Timeline">
+        <div class="left_half">
+            <ul class="left_ul">
+                <li class="left_bulletpoint">1931</li> */
+
+.Timeline {
+    display: flex
+} 
+
+/* .left_half {
+
+    width: 45%;
+    border: 3px solid green;
+}
+
+.right_half {
+    width: 45%;
+    border: 3px solid red;
+
+} */
+
+
+.left_ul {
+    justify-content: flex-end;
+    color: red
+} 
+
+.right_ul {
+    justify-content: flex-start;
+    color: blue
+} 
+
+/*.left_bulletpoint {
+    justify-content: flex-end;
+    color: pink
+}
+
+.right_bulletpoint {
+    justify-content: flex-start;
+    color: brown
+} */
+/* 
+body {
+    background-color: aliceblue;
+} */
+
+#headerarea {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.photos_planning_container {
+    display: flex;
+    align-self: flex-end; 
+    border: 4px double rgb(99, 6, 6);
+    position: relative;
+    }
+
+.photos_execution_container {
+    display: flex;
+    align-self: flex-end; 
+    border: 4px double rgb(99, 6, 6);
+    position: relative;
+    }
+
+.photos_victory_container{
+    display: flex;
+    align-self: flex-end; 
+    border: 4px double rgb(99, 6, 6);
+    position: relative;
+    }
+
+.photos {
+    width: 100px;
+    height: 150px
+}
+
+.Planning.pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: rgba(81, 81, 1, .8);
+    text-align: center; /* Center text horizontally */
+    font-size: 50px;
+    transition: 0.3s;
+    /* Use padding for vertical centering */
+    padding: 10px 0; /* Adjust the padding values */
+}
+
+.photos_planning_container:hover .Planning.pop-up {
+    opacity: 1;
+    /* Additional styling on hover */
+}
+
+.photos_planning_container:hover .photos.Planning {
+    opacity: .6;
+    /* Additional styling on hover */
+}
