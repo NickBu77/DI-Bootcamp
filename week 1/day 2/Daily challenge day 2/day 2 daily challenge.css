@@ -1,0 +1,29 @@
+nav {
+   background-color: black;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    height: 5vh;
+    width: 100%;
+    font-weight: 700;
+
+}
+
+#nav_icon  {
+    margin: 10vh
+}
+
+.nav_text {
+    margin-right: 10vh;
+}
+
+
+
+footer {
+
+    bottom: 0;
+    left: 50%;
+    position: absolute
+}
+

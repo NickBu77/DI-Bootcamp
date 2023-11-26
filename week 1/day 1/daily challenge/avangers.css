@@ -1,0 +1,159 @@
+body {
+    margin: 0;
+    position: relative;
+}
+
+.hero-image{
+    background-image: url(https://terrigen-cdn-dev.marvel.com/content/prod/1x/004tho_ons_mas_mob_01_0.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+@media all and (min-width: 1024px) and (max-width: 1280px) { 
+    .hero-image{
+
+        min-height: 100vh;
+
+    }
+    }
+
+@media all and (min-width: 768px) and (max-width: 1024px) { 
+    .hero-image{
+
+        min-height: 75vh;
+
+    }
+    }
+
+@media all and (min-width: 480px) and (max-width: 768px) { 
+    .hero-image  {
+        width: 50%;
+        background-size: contain;
+        background-size: cover;
+
+    }
+    }
+
+@media all and (max-width: 480px) { 
+    .logo  {
+        width: 25%
+    }
+    }
+
+nav {
+    background-color: black;
+    height: 10vh;
+}
+
+@media all and (max-width: 768px)  {
+    nav {
+        background-color: yellow
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 992px) {
+    nav {
+        background-color: lightgreen
+    }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px) {
+    nav {
+        background-color: red
+    }
+}
+
+@media all and (min-width: 1200px) {
+    nav {
+        background-color: black
+    }
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: 1% 0 0 2%;
+}
+
+a{
+    align-self: center;
+    text-decoration: none;
+    color: white;
+}
+
+ul{
+    list-style-type: none;
+    float: right;
+    width: 50%;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    display: inline;
+    padding: 4%;
+    min-width: calc(2vw * 3);
+    font-size: 2vw;
+}
+
+@media all and (min-width: 992px)  {
+    li {
+    color: white;
+
+}
+}
+@media all and (min-width: 768px) and (max-width: 992px) {
+    li {
+    color: white;
+
+}
+}
+
+@media all and (max-width: 768px) {
+    li {
+    color: black;
+
+}
+}
+
+
+@media all and (min-width: 768px) { 
+    h1  {
+    font-size: 25px
+}
+}
+
+@media all and (min-width: 600px) and (max-width: 768px){ 
+    h1  {
+        font-size: 35px
+}
+}
+
+p{
+    width: 30%;
+    font-size: 1vw;
+}
+
+.text {
+    position: absolute;
+    left: 15%;
+    top: 30%;
+}
+
+@media all and (min-width:992px) {
+    .text    {
+        display: flex;
+        align-items: center;
+        }
+}
+
+@media all and (min-width:992px) {
+    h1   {
+        margin-right: 3vw;
+        }
+}

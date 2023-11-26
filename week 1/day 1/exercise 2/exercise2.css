@@ -2,10 +2,10 @@
     background-color: rgb(25, 25, 172);
     color: white;
     border: none;
-    height: 20px;
-    width: 60px;
+    height: 2vh;
+    width: 6vw;
     border-radius: 6px;
-    margin-bottom: 10px;
+    margin-bottom: .5%;
 }
 
 .sign_up {
@@ -13,8 +13,8 @@
     color: white;
     border: none;
     font-size: 15px;
-    height: 25px;
-    width: 80px;
+    height: 10%;
+    width: 5%;
     border-radius: 6px;
 }
 
@@ -52,15 +52,54 @@ form {
 
 .email{
     border-radius: 5px;
-    height: 25px;
+    height: 15%;
     display: inline-block;
     text-align: left;
 }
 
+.icons_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70vh
+}
+
+.computer_icon {
+    height: 10vh;
+    width: 10wh
+}
+.FR_container {
+    display: flex;
+    flex-direction: column;
+    height: 300px; /* Specify a height for demonstration purposes */
+    width: 10vw
+}
+
+.FR_container p {
+
+    font-size: .8rem;
+    color: gray
+}
+
+
+/* display: grid;
+grid-template-rows: repeat(3, 1fr); 
+align-items: space-evenly; 
+height: 300px; 
+
+.computer_icon {
+    
+}
+
 .bootstrap {
-    margin-left: 200px;
-    margin-right: 600px
+    margin-left: 15%;
+    margin-right: 50%
 }
 body {
     background-color: lightgray;
+}
+
+img{
+    height: 7vh;
+    height: 7xh
 }

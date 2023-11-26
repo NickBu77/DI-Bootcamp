@@ -1,0 +1,66 @@
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas:
+    "header header header"
+    "aside1 div1a div1b "
+    "aside1 aside1 div2b"
+    "footer footer footer";
+
+}
+
+
+.item {
+    border: 1px solid pink}
+
+.one {
+    background-color:lightblue;
+    grid-area: header;
+
+}
+
+.two {
+    background-color: blue;
+    grid-area: aside1
+}
+
+
+/* .item.four {
+    background-color: red;
+    grid-area: "aside2";
+
+}
+
+.item.five {
+    background-color: blue;
+    grid-area: "div2a"
+}
+
+.item.six {
+    background-color: blue;
+    grid-area: "div2b";
+
+}
+
+.item.seven {
+    background-color: yellow;
+    grid-area: "footer";
+    height: 5vh
+
+}
+
+.item.eight {
+    background-color: yellow;
+    grid-area: "footer";
+    height: 5vh
+}
+
+
+.item.nine {
+    background-color: yellow;
+    grid-area: "footer";
+    height: 5vh;
+
+    text-align: center;
+} */

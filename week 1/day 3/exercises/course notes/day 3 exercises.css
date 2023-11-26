@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+ 
+}
+
+.sub-container {
+    color: white;
+    background-color: aqua;
+    width: 100%;
+    height: 5%;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    
+
+
+}
+
+.sub-container.two {
+    width: 80%;
+    height: 10%;
+    justify-content: center;
+}

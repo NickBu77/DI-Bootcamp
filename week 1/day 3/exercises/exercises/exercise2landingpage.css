@@ -1,0 +1,22 @@
+
+img {
+    width: 20%;
+    height: 20%
+}
+
+.pictures_container {
+    height: 100vh;
+    display: grid;
+    position: relative;
+    justify-content: space-around;
+    align-items: baseline;
+}
+
+.pictures_container > div {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
