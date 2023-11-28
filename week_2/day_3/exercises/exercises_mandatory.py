@@ -85,23 +85,56 @@ print(brand.keys())
 more_on_zara= {'creation_date': 1975, 
 'number_stores':10000}
 
-print(more_on_zara)
-# 2. Create a dictionary called brand which value is the information from part one (turn the info into keys and values).
-# The values type_of_clothes and international_competitors should be a list. The value of major_color should be a dictionary.
-# 3. Change the number of stores to 2.
-# 4. Print a sentence that explains who Zaras clients are.
-# 5. Add a key called country_creation with a value of Spain.
-# 6. Check if the key international_competitors is in the dictionary. If it is, add the store Desigual.
-# 7. Delete the information about the date of creation.
-# 8. Print the last international competitor.
-# 9. Print the major clothes colors in the US.
-# 10. Print the amount of key value pairs (ie. length of the dictionary).
-# 11. Print the keys of the dictionary.
-# 12. Create another dictionary called more_on_zara with the following details:
+#13
+brand.update(more_on_zara)
 
-# creation_date: 1975 
-# number_stores: 10 000
+print(brand)
 
+#14
+print(brand['number_stores']) #it printed the new value I added in step 12, overriding the prior value
 
-# 13. Use a method to add the information from the dictionary more_on_zara to the dictionary brand.
-# 14. Print the value of the key number_stores. What just happened ?
+# Exercise 4 : Disney Characters
+
+users = ["Mickey","Minnie","Donald","Ariel","Pluto"]
+
+#1
+user_dic = {}
+for (i, user) in enumerate(users):
+    user_dic[user]=i
+
+print(user_dic)
+
+#2
+
+no2_user_dic={}
+for (i, user) in enumerate(users):
+    no2_user_dic[i]=user
+
+print(no2_user_dic)
+
+#3
+
+sorted_users = sorted(users)
+sorted_dic = {}
+for (i, user) in enumerate(sorted_users):
+    sorted_dic[user]=i
+print(sorted_dic)
+
+#4
+disney_users_A=[]
+for user in users:
+    if 'i' in user:
+        disney_users_A.append(user)
+    else: 
+        continue
+print(disney_users_A)
+
+disney_users_A=[]
+for user in users:
+    if 'm' or 'p' in user.lower():
+        disney_users_A.append(user)
+    else: 
+        continue
+print(disney_users_A)
+
+print(15000/4*12)
