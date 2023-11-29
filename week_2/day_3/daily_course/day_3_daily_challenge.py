@@ -38,10 +38,32 @@ items_purchase = {
 }
 
 wallet = "$300"
+walletwosigns = int(wallet.replace('$',''))
 
-# purchased = []
-# for key, value in items_purchase.items():
-#     while sum(purchased) < 
+items_list = list(items_purchase)
+costs_list = list(items_purchase.values())
 
-wosigns = wallet.replace('$','')
-print(wosigns)
+zipped_dict = sorted(list(zip(items_list,costs_list)))
+unzipped_dict = dict(zipped_dict)
+purchased_amt = []
+purchased_item = []
+
+
+while sum(purchased_amt) < walletwosigns:
+    for item, price in unzipped_dict.items():
+        price = price.replace('$','')
+        if ',' in price:
+            price = price.replace(',','')  
+        price = int(price)
+        if sum(purchased_amt)+price <= walletwosigns:
+            purchased_amt.append(price)
+            purchased_item.append(item)
+        else: 
+            continue
+
+
+print(purchased_item)
+
+
+
+
