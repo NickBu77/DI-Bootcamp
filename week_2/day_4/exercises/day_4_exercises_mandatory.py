@@ -178,6 +178,7 @@ questions_answers= [
 
 # Create a function that asks the questions to the user, and check his answers. Track the number of correct, incorrect answers. Create a list of wrong_answers
 
+
 questions =[]
 answers =[]
 
