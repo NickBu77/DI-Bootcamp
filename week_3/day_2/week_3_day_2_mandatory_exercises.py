@@ -1,62 +1,92 @@
-# Instructions : Old MacDonald’s Farm
-
-# macdonald = Farm("McDonald")
-# macdonald.add_animal('cow',5)
-# macdonald.add_animal('sheep')
-# macdonald.add_animal('sheep')
-# macdonald.add_animal('goat', 12)
-# print(macdonald.get_info())
-# Output
-
-# McDonald's farm
-
-# cow : 5
-# sheep : 2
-# goat : 12
-
-#     E-I-E-I-0!
+# Exercise 1: Pets
+class Pets():
+    def __init__(self, animals):
+        self.animals = animals
 
 
-# Create the code that is needed to receive the result provided above. Below are a few questions to assist you with your code:
+    def walk(self):
+        for animal in self.animals:
+            print(animal.walk())
 
-# Create a class called Farm. How should it be implemented?
-# Does the Farm class need an __init__ method? If so, what parameters should it take?
-# How many methods does the Farm class need?
-# Do you notice anything interesting about the way we are calling the add_animal method? What parameters should this function have? How many…?
-# Test your code and make sure you get the same results as the example above.
-# Bonus: nicely line the text in columns as seen in the example above. Use string formatting.
+    def make_noise(self):
+        for animal in self.animals:
+            print(animal.make_noise())
 
-class Farm():
-    def __init__(self, farm_name):
-        self.name = farm_name
-        self.animals_list = []
+class Cat():
+    is_lazy = True
 
-    def add_animal(self,animal,number=1):
-        self.animals_list.extend([animal] * number)
+    def __init__(self, name, age, sound):
+        self.name = name
+        self.age = age
+        self.sound = sound
+    
+    def make_noise(self):
+        return f'{self.name} is making a {self.sound} noise'
 
-    def animal_count(self):
-        animal_dict = {}
-        counter=0
-        for a in self.animals_list:
-            if a in animal_dict:
-                animal_dict[a] += 1
-            else:
-                animal_dict[a] = 1
-        print(f'{self.name}' )
-        for k, v in animal_dict.items():
-            print(f'{k}: {v}')
-        print(' '*10+'E-I-E-I-0!')
-        
-
-farm_1 = Farm('Old McDonald')
-farm_1.add_animal('sheep',2)
-farm_1.add_animal('chicken',5)
-farm_1.add_animal('hen')
-farm_1.add_animal('rabbit',10)
-
-print(farm_1.name)
-
-print(farm_1.animals_list)
-print(farm_1.animal_count())
+    def walk(self):
+        return f'{self.name} is just walking around'
+    
 
 
+class Bengal(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+
+class Chartreux(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+    
+class Siamese(Cat):
+    def sing(self, sounds):
+        return f'{sounds}'
+    
+
+bengal_cat = Bengal(name='Ben',age=2,sound='hiss')
+chartreux_cat =  Chartreux(name='Char',age=3,sound='meow')
+siamese_cat = Siamese(name='Siam',age=7, sound='cry')
+
+all_cats = [bengal_cat, chartreux_cat, siamese_cat]
+
+sara_pets = Pets(all_cats)
+
+sara_pets.walk()
+sara_pets.make_noise()
+
+#  Exercise 2 : Dogs
+# Instructions
+# Create a class called Dog with the following attributes name, age, weight.
+# Implement the following methods in the Dog class:
+# bark: returns a string which states: “<dog_name> is barking”.
+# run_speed: returns the dogs running speed (weight/age*10).
+# fight : takes a parameter which value is another Dog instance, called other_dog. This method returns a string stating which dog won the fight. The winner should be the dog with the higher run_speed x weight.
+
+# Create 3 dogs and run them through your class.
+
+class Dog():
+    def __init__(self, name, age, weight):
+        self.name = name
+        self.age = age
+        self.weight = weight
+        self.trained = True
+
+    def bark(self):
+        return f'{self.name} is barking'
+
+    def run_speed(self):
+        running_speed = int(self.weight/self.age*10)
+        print(f'{self.name} runs at {running_speed} miles per hour')
+        return running_speed
+
+    def fight(self, other_dog):
+        if self.run_speed() > other_dog.run_speed():
+            return f'{self.name} is faster than {other_dog.name}'
+        else:
+            return f'{other_dog.name} is faster than {self.name}'
+
+dog_1 = Dog('Rex',3, 20)
+dog_2 = Dog('Lily',5,10)
+dog_3 = Dog('Maya', 10, 5)
+
+print(dog_2.bark())
+print(dog_3.run_speed())
+print(dog_1.fight(dog_2))
