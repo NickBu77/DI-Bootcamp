@@ -11,7 +11,7 @@
 
 # do_a_trick: If the dog is trained the method should print one of the following sentences at random:
 # “dog_name does a barrel roll”.
-# “dog_name stands on his back legs”.
+# “dog_name stands on his back legs”.pyth
 # “dog_name shakes your hand”.
 # “dog_name plays dead”.
 
