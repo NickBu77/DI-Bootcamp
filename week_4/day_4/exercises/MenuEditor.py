@@ -94,7 +94,7 @@ class menu_editor:
         menu = MenuManager()
         items = menu.all()
         for item in items:
-            print(f'Item ID {item[0]}, {item[1].lower()} is {item[3]} USD')
+            print(f'Item ID {item[0]}, {item[1].lower()} is {item[2]} USD')
 
 
 ed = menu_editor()
