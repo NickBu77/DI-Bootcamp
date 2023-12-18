@@ -1,0 +1,32 @@
+import http.client
+
+# Replace 'YOUR-RAPIDAPI-KEY' with your actual RapidAPI key
+RAPIDAPI_KEY = 'YOUR-RAPIDAPI-KEY'
+
+conn = http.client.HTTPSConnection("political-bias-database.p.rapidapi.com")
+
+headers = {
+    'X-RapidAPI-Key': RAPIDAPI_KEY,
+    'X-RapidAPI-Host': "political-bias-database.p.rapidapi.com"
+}
+
+# Replace '/some_endpoint' with the specific endpoint from the API documentation
+conn.request("GET", "/some_endpoint", headers=headers)
+
+try:
+    res = conn.getresponse()
+
+    if res.status == 200:
+        data = res.read()
+        print(data.decode("utf-8"))
+    else:
+        print(f"Failed to fetch data. Status code: {res.status}")
+
+except http.client.HTTPException as e:
+    print(f"HTTPException occurred: {e}")
+
+except Exception as e:
+    print(f"An error occurred: {e}")
+
+finally:
+    conn.close()
